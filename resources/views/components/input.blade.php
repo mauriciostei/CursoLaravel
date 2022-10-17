@@ -2,10 +2,11 @@
     'type' => 'text',
     'nombre',
     'label' => '',
+    'value' => '',
 ])
 
 <div class="form-floating mb-3">
-    <input type="{{$type}}" name="{{$nombre}}" class="form-control" id="{{$nombre}}"/>
+    <input type="{{$type}}" name="{{$nombre}}" class="form-control" id="{{$nombre}}" value="{{$value}}"/>
     <label for="{{$nombre}}"> {{$label}} </label>
     @error($nombre)
         <div class="text-center text-danger"> {{$message}} </div>
