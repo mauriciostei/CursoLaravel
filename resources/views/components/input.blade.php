@@ -5,7 +5,7 @@
     'value' => '',
 ])
 
-<div class="form-floating mb-3">
+<div {{ $attributes->merge(['class' => 'form-floating mb-3']) }}>
     <input type="{{$type}}" name="{{$nombre}}" class="form-control" id="{{$nombre}}" value="{{$value}}"/>
     <label for="{{$nombre}}"> {{$label}} </label>
     @error($nombre)

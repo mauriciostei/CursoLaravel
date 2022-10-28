@@ -24,4 +24,10 @@ class LoginController extends Controller
         session()->regenerate();
         return redirect()->route('home');
     }
+
+    public function logout(){
+        Auth::logout();
+        session()->regenerate();
+        return redirect()->route('login');
+    }
 }
